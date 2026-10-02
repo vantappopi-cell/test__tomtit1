@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Host Grotesk", sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1254px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 53px 0;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.heaer__list {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__link {
+    font-size: 20px;
+}
+
+.header__item a {
+    font-size: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header__buttom {
+    font-size: 20px;
+    padding: 20px 35px;
+    border: 1px solid;
+    background-color: inherit;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+
+.header__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 20;
+}
+
+.header__burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.hero{
+    margin-top: 51px;
+    margin-bottom: 83px;
+}
+
+.hero__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.hero__tittle{
+    font-weight: 500;
+    font-size: 60px;
+    max-width: 531px;
+    margin-bottom: 35px;
+}
+
+.hero__text{
+    font-size: 20px;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+.hero__link{
+    color: #FFF;
+    background-color: #000;
+    padding:20px 35px ;
+    border-radius: 20px;
+}
+
+
+.parents{
+    background-color: #B9FF66;
+    transform: rotate(-2deg);
+    margin: 50px 0 ;
+}
+
+.parents__container{
+    display: flex;
+    padding: 40px;
+    gap: 47px;
+}
+.companny{
+    display: flex;
+    align-items: center;
+    gap: 47px ;
+}
+
+@media (max-width: 1024px) {
+    .header__wrapper {
+        padding: 30px 0;
+    }
+
+    .header__nav {
+        gap: 20px;
+    }
+
+    .heaer__list {
+        gap: 0 20px;
+    }
+
+    .header__item a {
+        font-size: 16px;
+    }
+
+    .header__buttom {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .hero__tittle {
+        font-size: 44px;
+        margin-bottom: 25px;
+    }
+
+    .hero__text {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .hero__link {
+        font-size: 18px;
+        padding: 16px 30px;
+    }
+    
+    .parents__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 40px;
+    }
+
+     .parents {
+        margin: 60px 0;
+    }
+
+    .parents__container {
+        padding: 30px 20px;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .companny {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__wrapper {
+        padding: 20px 0;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: right 0.4s ease;
+        z-index: 15;
+    }
+
+    .header__nav.is-open {
+        right: 0;
+    }
+
+    .heaer__list {
+        flex-direction: column;
+        gap: 30px 0;
+        text-align: center;
+    }
+
+    .header__item a {
+        font-size: 24px;
+    }
+
+    .header__buttom {
+        font-size: 18px;
+        padding: 15px 40px;
+    }
+
+    .header__burger.is-active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .header__burger.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__burger.is-active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero__wrapper {
+        flex-direction: column-reverse; 
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .hero__info {
+        flex: 1 1 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__tittle {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .hero__text {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .hero__link {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .hero__img {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 450px;
+    }
+
+
+    .parents__container {
+        gap: 20px 30px;
+    }
+    
+    .companny img {
+        max-height: 35px;
+    }
+
+     .parents {
+        margin: 50px 0;
+        transform: rotate(-1deg); 
+    }
+
+    .parents__container {
+        padding: 20px 15px;
+        gap: 25px 35px; 
+    }
+
+    .companny {
+        transform: rotate(1deg); 
+    }
+
+    .companny img {
+        max-height: 28px;
+    }
+}
