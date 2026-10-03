@@ -252,3 +252,24 @@ document.addEventListener("DOMContentLoaded", function() {
   list.addEventListener("scroll", updateSliderState)
   setTimeout(updateSliderState, 100)
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerButton = document.getElementById('burger-btn');
+    const headerNav = document.querySelector('.header__nav');
+    const navLinks = document.querySelectorAll('.header__item a');
+    const body = document.body;
+
+    burgerButton.addEventListener('click', function() {
+        burgerButton.classList.toggle('active');
+        headerNav.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+    });
+
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            burgerButton.classList.remove('active');
+            headerNav.classList.remove('active');
+            body.classList.remove('no-scroll');
+        });
+    });
+});
