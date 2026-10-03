@@ -813,6 +813,10 @@ body.no-scroll {
         align-items: center;
     }
 
+    .yu{
+        display: contents;
+    }
+
     .service__item {
         width: 100%;
         max-width: 500px;
